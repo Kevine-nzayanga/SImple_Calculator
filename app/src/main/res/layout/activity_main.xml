@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvcalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Calculator"
+        android:textColor="#0C0C0C"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etfirstvalue"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_margin="10dp"
+        android:hint="Enter first value"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etsecondvalue"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_margin="10dp"
+        android:hint="Enter second value"
+        android:inputType="number"
+        android:textColor="#040404"
+        android:textColorHint="#000000"
+        android:textSize="24sp" />
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="2">
+
+         <Button
+             android:id="@+id/btnadd"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="10dp"
+             android:layout_marginVertical="10dp"
+             android:layout_weight="1"
+             android:backgroundTint="@color/teal_200"
+             android:text="ADD"
+             android:textSize="24sp" />
+
+         <Button
+             android:id="@+id/btnsubtract"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginHorizontal="10dp"
+             android:layout_weight="1"
+             android:backgroundTint="@color/teal_200"
+             android:text="SUB"
+             android:textSize="24sp" />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:text="multiply"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnmodulus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_200"
+            android:text="modulus"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvanswer"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/teal_700"
+        android:text="Answer"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="44sp" />
+
+    >
+
+</LinearLayout>
